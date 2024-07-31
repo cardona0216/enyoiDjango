@@ -22,3 +22,6 @@ def delete_board(request):
     board.delete()
     messages.success(request,'Registro eliminado con exito')
     return redirect('home')
+
+def new_board(request):
+    return render(request,'new_board.html')
